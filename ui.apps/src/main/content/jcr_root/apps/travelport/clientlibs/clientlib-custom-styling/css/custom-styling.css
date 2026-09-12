@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+main{
+	background-color: antiquewhite;
+     width:100%;
+     height:100%
+}
+
+#panelcontainer-d175a03492{
+	background-color: rgba(0,0,0,0.3);
+    padding: 20px 20px !important;
+    
+   
+}
+ 
+.cmp-adaptiveform-numberinput .cmp-adaptiveform-numberinput__label,
+.cmp-adaptiveform-textinput .cmp-adaptiveform-textinput__label,
+.cmp-adaptiveform-emailinput .cmp-adaptiveform-emailinput__label,
+.cmp-adaptiveform-telephoneinput .cmp-adaptiveform-telephoneinput__label {
+	color:gray;
+    font-size:18px;
+}
+
+.cmp-adaptiveform-numberinput .cmp-adaptiveform-numberinput__widget, 
+.cmp-adaptiveform-textinput .cmp-adaptiveform-textinput__widget,
+.cmp-adaptiveform-emailinput .cmp-adaptiveform-emailinput__widget,
+.cmp-adaptiveform-telephoneinput .cmp-adaptiveform-telephoneinput__widget{
+	border:none;
+    outline:none;
+    padding:10px;
+    color:orange;
+}
+
+.cmp-adaptiveform-recaptcha__widget{
+    border:1px solid;
+    width:100%;
+    padding:10px;
+    
+}
+
+.cmp-adaptiveform-recaptcha__widget .g-recaptcha{
+	width:inherit;
+    display:flex;
+    justify-content:centre;
+    align-items:centre;
+}
+
+.cmp-adaptiveform-button{
+    border:1px solid;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+}
+.cmp-adaptiveform-button .cmp-adaptiveform-button__widget{
+	width:80%;
+    height:60px;
+    border-radius:15px;
+    outline:none;
+    border:none;
+	font-size:18px;
+    
+}
+
+.cmp-adaptiveform-button .cmp-adaptiveform-button__widget:hover{
+	background-color:rgb(53, 193, 232);
+}
