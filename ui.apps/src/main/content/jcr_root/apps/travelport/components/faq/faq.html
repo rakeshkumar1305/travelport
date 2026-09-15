@@ -1,0 +1,19 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+
+<sly data-sly-call="${clientlib.css @ categories='travelport.faq'}" />
+<section>
+    <sly data-sly-use.faq="com.travelport.core.models.FAQModel"/>
+    
+    <div class="faq-items" data-sly-repeat.item="${faq.faqItems}">
+        <div class="faq-question">
+            ${item.question}
+            <span class="faq-icon">+</span>
+          
+        </div>
+
+        <div class="faq-answer">
+           <p>${item.answer}</p>
+        </div>
+    </div>
+</section>
+<sly data-sly-call="${clientlib.js @ categories='travelport.faq'}" />
