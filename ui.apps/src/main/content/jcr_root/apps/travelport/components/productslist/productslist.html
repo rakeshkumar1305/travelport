@@ -1,0 +1,22 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.css @ categories='travelport.productlist'}" />
+<sly data-sly-use.productList="com.travelport.core.models.ProductModel" />
+
+<main>
+    <section class="search">
+        <input type="search" class="search-bar" name="searchBar">
+    </section>
+    <section class="productList">
+        <div class="card" data-sly-repeat.products="${productList.productItems}" >
+            <div class="cardItems">
+                <img src="${products.productImage}" alt="product image">
+                <p class="product-name">${products.productName}</p>
+                <p>${products.productPrice}</p>
+                <p>${products.productCategory}</p>
+                <p>${products.productDescription}</p>
+                <div data-sly-resource="${'Add to Cart' @ resourceType='travelport/components/button'}"></div>
+            </div>
+        </div>
+    </section>
+</main>
+<sly data-sly-call="${clientlib.js @ categories='travelport.productlist'}" />
